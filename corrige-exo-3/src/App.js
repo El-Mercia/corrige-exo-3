@@ -7,7 +7,7 @@ import {
 
 
 
-
+import Home          from './pages/Home';
 import CreateComment from './pages/CreateComment';
 import DeleteComment from './pages/DeleteComment';
 
@@ -16,6 +16,7 @@ const App = () => {
     <Router>
       
       <Switch>
+        <Route exact path="/"          component={Home}          />
         <Route path="/comments/create" component={CreateComment} />
         <Route path="/comments/delete" component={DeleteComment} />
       </Switch>
